@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+button{
+    border: none;
+}
+
+body{
+    width: 100%;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    border-bottom: black 1px solid;
+}
+
+ul{
+    list-style: none;
+}
+
+/* header */
+
+.header{
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    gap: 86px;
+    border-bottom: 1px solid #E0E0E0 ;
+}
+
+.header__download img{
+    cursor: pointer;
+}
+
+.header__content{
+    display: flex;
+    align-items: center;
+    /* margin: 0 auto; */
+    gap: 50px;
+}
+
+.header_logo{
+    display: flex;
+    align-items: center;
+    /* margin-right: 50px; */
+}
+
+.header__navigation a{
+    color: var(--color_text);
+}
+
+.header__list{
+    display: flex;
+    gap: 25px;
+}
+
+.header__download{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+/* content */
+
+.content{
+    /* margin-top: auto; */
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 1200px;
+    margin-top: 86px;
+    display: flex;
+    gap: auto;
+}
+
+.content_main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.content__text{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.content__title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.content__text_main{
+    font-size: 1.25rem;
+    font-weight: 400px;
+    width: 500px;
+}
+
+.content__button{
+    background-color: var(--violet);
+    width: 317px;
+    height: 74px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content__button:hover{
+    background-color: var(--active_violet);
+}
+
+.button__text{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/* footer */
+
+footer{
+    background-color: var(--color_text);
+    color: white;
+    display: block;
+    height: 100px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    margin-top: auto;
+    bottom: 0;
+}
+
+.content__footer{
+    margin: 10px auto;
+    width: 1200px;
+    color: #E0E0E0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__social{
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+    gap: 20px;
+}
+
+/* colors */
+
+:root{
+    --color_text: black;
+    --violet: #A009C6;
+    --active_violet: #83139f;
+}
